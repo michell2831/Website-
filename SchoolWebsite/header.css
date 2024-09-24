@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    /* background-image: url(bg1.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background-color: #800000;
+    box-shadow: gray ;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+nav a:hover {
+    color:gold;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(128, 0, 0, 0.508);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(235, 235, 235, 0.51);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.sidebar a:hover {
+    background-color: #ffbf00;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+.school-logo img{
+    max-width: 75px; /
+    margin-right: 10px; 
+    padding-left: 15px;
+    margin-bottom: -50px;
+  
+}
+
+.school-name {
+    margin-left: 90px;
+    margin-bottom: -35px;
+    margin-top: -10px;
+    font-size: 16;
+    color: aliceblue;
+}
+
+.branch {
+    margin-top: 35px;
+    margin-bottom: -35px;
+    margin-left: 90px;
+    color: antiquewhite;
+}
+
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.search-bar li {
+    margin-left: 1300px; /* Push the search bar to the right */
+    display: flex;
+    align-items: center;
+    margin-bottom: -22px;
+    margin-top: -20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 150px; /* Initial width for larger screens */
+}
+
+.search-bar button {
+    padding: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .search-bar {
+        display: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        justify-content: flex-end; 
+    }
+
+    .search-bar li {
+        margin-right: auto; 
+    }
+}
+
+
+footer {
+    background-color: maroon;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family:sans-serif ;
+}
+
+.footer-info,
+.quicklinks,
+.contact-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.quicklinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quicklinks a {
+    text-decoration: none;
+    color: white;
+   
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+
+.quicklinks a:hover {
+    color: goldenrod;
+}
+
+.contact-info a:hover {
+    color: goldenrod;
+}
+
+.copyright {
+    background-color: rgb(47, 43, 43);
+    padding: 10px;
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}

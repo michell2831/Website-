@@ -1,0 +1,115 @@
+/* RIGHT CLOLUMN */
+.column2 {
+  margin-left: 50px;
+   margin-right: 50px;
+  padding: 20px;
+  text-align: justify;
+} 
+
+.column2 h1 {
+  color: maroon;
+  display: inline-block;
+  margin-top: 1px;
+}
+.column2 p {
+  color: rgba(48, 44, 44, 0.803);
+  line-height: 1.9;
+}
+
+.name {
+  color: maroon;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/* Container for the image gallery */
+* {
+  box-sizing: border-box;
+}
+  
+/* Position the image container */
+.container {
+  position: relative;
+  margin-bottom: 100px;
+}
+  
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+  
+/*pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+  
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+  
+/* Position the "next button" */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+  
+/* On hover */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+  
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: maroon;
+  padding: 4px;
+  color: white;
+  font-size: 23px;
+}
+  
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+  
+/* transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+  opacity: 1;
+}
+  

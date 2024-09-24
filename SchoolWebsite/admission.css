@@ -1,0 +1,48 @@
+.whole {
+    background-image: url('bg1.jpeg');
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+
+    margin: 0; /* Optional: removes default body margin */
+    padding: 0; /* Optional: removes default body padding */
+    min-height: 100vh;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .whole {
+        background-image: none; /* Cover the entire element on smaller screens */
+        
+    }
+}
+
+
+.container {
+    display:             flex;
+    line-height: .4in;
+    font-size: 20px;
+    justify-content: center;
+    
+}
+
+.two {
+    /* border: 2px solid; */
+    margin-right: 0px ;
+    margin-left: 30px;
+}
+.acad {
+    color: maroon;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.school-logo img{
+    max-width: 60px; /
+    margin-right: 10px; 
+    padding-left: 15px;
+    margin-bottom: -50px;
+  
+}
+
